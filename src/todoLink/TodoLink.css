@@ -1,0 +1,21 @@
+.nav-container{
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-around;
+}
+
+.nav-container li{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.output-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.output-container{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
