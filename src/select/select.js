@@ -9,7 +9,7 @@ function Select() {
   ];
 
   const [primaryCountry, setPrimaryCountry] = useState();
-  
+
   return (
     <>
       <select
@@ -34,17 +34,20 @@ function Select() {
         })}
       </select>
 
-      <select name="" id="">
-        {primaryCountry !== undefined
-          ? countries[primaryCountry].cities.map((city, index) => {
-              return (
-                <option value={city} index={index} key={city}>
-                  {city}
-                </option>
-              );
-            })
-          : null}
-      </select>
+      {primaryCountry ? (
+        <select name="" id="">
+          ?
+          {countries[primaryCountry].cities.map((city, index) => {
+            return (
+              <option value={city} index={index} key={city}>
+                {city}
+              </option>
+            );
+          })}
+        </select>
+      ) : (
+        ""
+      )}
     </>
   );
 }

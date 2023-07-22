@@ -53,11 +53,11 @@ function AppTodo() {
       <button onClick={addActivity}>ADD TODO</button>
       <br />
 
-      {list != [] &&
+      {list.length > 0 &&
         list.map((li, index) => {
           return (
             <>
-              <p key={index}>
+              <p key={li}>
                 {li}
                 <button onClick={() => removeActivity(index)}>Remove</button>
               </p>

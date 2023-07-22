@@ -9,22 +9,36 @@ import AppClock from "./clock/clock.js";
 import AppFetch from "./fetch/fetch.js";
 import AppTodoPractical from "./todoPractical/AppTodoPractical";
 import Select from "./select/select";
-import TodoLink from "./todoLink/TodoLink";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    {/* <React.StrictMode> */}
     {/* <AppBorder /><hr /> */}
-    {/* <AppListStyle/><hr /> */}
+    {/* component for border  */}
+
+    {/* <AppListStyle /><hr /> */}
+    {/* handle different list style type from outside*/}
+
     {/* <AppOption/><hr /> */}
-    {/* <AppFilter/><hr /> */}
+    {/* add option in select menu from input text */}
+
+    {/* <AppFilter /><hr /> */}
+    {/* search particular character from array */}
+
     {/* <AppTodo /><hr /> */}
+    {/* add todo from input text, remove one and remove all todo */}
+
     {/* <AppClock /><hr /> */}
+    {/* digital clock */}
+
     {/* <AppFetch /><hr /> */}
+    {/* fetch json data title and when click on title fetch comment */}
+
     {/* <AppTodoPractical/> <hr /> */}
+    {/* when todo tick then delete button show, when delete button click, todo delete */}
+
     {/* <Select/><hr /> */}
-    {/* <TodoLink /> */}
-    {/* </React.StrictMode> */}
+    {/* when first option select then in another select box option change */}
+
   </>
 );
