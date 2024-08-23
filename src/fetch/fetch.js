@@ -21,7 +21,7 @@ function AppFetch() {
   }, []);
 
   //
-  //
+  //HIII
 
   async function getComment(postid) {
     const index = posts.findIndex((post) => post.id == postid);
